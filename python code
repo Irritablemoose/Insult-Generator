@@ -1,0 +1,30 @@
+import random
+
+# Word banks for insults
+adjectives = [
+    "smelly", "wobbly", "goofy", "cranky", "fluffy",
+    "dizzy", "grumpy", "soggy", "wonky", "spicy"
+]
+
+nouns = [
+    "toaster", "walrus", "sock puppet", "pickle", "goblin",
+    "cabbage", "hamster", "marshmallow", "muffin", "taco"
+]
+
+endings = [
+    "who thinks Wi-Fi is magic",
+    "with the IQ of a crayon",
+    "who dances like a confused flamingo",
+    "who smells like expired yogurt",
+    "with the charm of wet cardboard"
+]
+
+# Get user input
+name = input("Enter a name to insult: ")
+
+# Build the insult
+insult = f"{name}, you {random.choice(adjectives)} {random.choice(nouns)} {random.choice(endings)}!"
+
+# Display it
+print("\n🔥 INSULT GENERATOR SAYS 🔥🥐")
+print(insult)
